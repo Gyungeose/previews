@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marine Tech — Concept Homepage</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1A2F;--navy2:#10263F;--steel:#8FA3B8;--white:#F3F6F9;--cyan:#3FD0C9;--line:rgba(143,163,184,.2)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--navy);color:var(--white);font-family:"Space Grotesk",system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.mono{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan)}
+.concept{background:#050E1A;color:var(--steel);font-size:12.5px;text-align:center;padding:8px 16px}
+.concept b{color:#fff}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.logo{font-weight:700;font-size:21px;letter-spacing:.04em;display:flex;align-items:center;gap:10px}
+.logo i{width:26px;height:26px;border:2px solid var(--cyan);border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:12px;color:var(--cyan)}
+.links{display:flex;gap:30px;font-size:14px;color:var(--steel)}
+.links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--cyan);color:var(--navy);padding:14px 24px;font-weight:600;font-size:15px;border-radius:4px;transition:all .2s}
+.btn:hover{background:#fff}
+.btn.line{background:transparent;color:#fff;border:1px solid var(--steel)}
+.btn.line:hover{border-color:#fff}
+.hero{position:relative;padding:96px 0 110px;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;background-position:-1px -1px}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,transparent 20%,var(--navy) 75%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+h1{font-size:clamp(42px,6.2vw,76px);line-height:1.02;font-weight:600;letter-spacing:-.02em;margin:18px 0 24px}
+h1 span{color:var(--cyan)}
+.lead{color:var(--steel);font-size:19px;max-width:540px;margin-bottom:36px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.spec{border:1px solid var(--line);background:rgba(16,38,63,.8);backdrop-filter:blur(4px);padding:26px;border-radius:6px}
+.spec h4{font-family:"IBM Plex Mono";font-weight:500;font-size:12px;letter-spacing:.14em;color:var(--steel);margin-bottom:18px;display:flex;justify-content:space-between}
+.row{display:flex;justify-content:space-between;padding:12px 0;border-top:1px dashed var(--line);font-size:15px}
+.row b{font-weight:500;color:var(--cyan)}
+.bar{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bar>div{padding:34px 28px}
+.bar>div+div{border-left:1px solid var(--line)}
+.bar strong{display:block;font-size:30px;font-weight:600;margin:6px 0 4px}
+.bar p{color:var(--steel);font-size:15px}
+section{padding:96px 0}
+h2{font-size:clamp(32px,4vw,48px);font-weight:600;letter-spacing:-.015em;line-height:1.1;margin:12px 0 16px}
+.sub{color:var(--steel);max-width:560px;margin-bottom:48px;font-size:17px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.svc>div{background:var(--navy);padding:34px 28px;transition:background .2s}
+.svc>div:hover{background:var(--navy2)}
+.svc .mono{color:var(--steel)}
+.svc h3{font-size:22px;font-weight:600;margin:14px 0 8px}
+.svc p{color:var(--steel);font-size:15px}
+.pattern{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.pattern svg{width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:var(--navy2)}
+.pattern li{list-style:none;padding:14px 0 14px 34px;position:relative;border-bottom:1px solid var(--line);color:var(--steel)}
+.pattern li::before{content:"";position:absolute;left:0;top:22px;width:14px;height:2px;background:var(--cyan)}
+.pattern li b{color:#fff;font-weight:500}
+.cta{background:linear-gradient(135deg,#10263F,#0E3346);border:1px solid var(--line);border-radius:8px;padding:64px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.cta p{color:var(--steel)}
+footer{padding:30px 0;border-top:1px solid var(--line);font-size:13px;color:var(--steel);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:900px){.hero .wrap,.pattern{grid-template-columns:1fr}.svc{grid-template-columns:1fr 1fr}}
+@media (max-width:720px){.wrap{padding:0 16px}.links{display:none}.hero{padding:56px 0 64px}.bar{grid-template-columns:1fr}.bar>div+div{border-left:0;border-top:1px solid var(--line)}.svc{grid-template-columns:1fr}section{padding:64px 0}.cta{padding:36px 24px}nav .btn{padding:10px 16px;font-size:14px}}
+</style>
+</head>
+<body>
+<div class="concept">Concept homepage prepared for <b>Marine Tech LLC</b> by Maurice Francis · not the official website</div>
+<div class="wrap">
+<nav>
+  <div class="logo"><i>MT</i>MARINE TECH</div>
+  <div class="links"><a href="#services">Services</a><a href="#patterns">Pattern library</a><a href="#contact">Contact</a></div>
+  <a class="btn" href="#contact">Request a quote</a>
+</nav>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="mono">// Canvas &amp; upholstery · St. Thomas, USVI</div>
+      <h1>Superyacht canvas,<br><span>made to spec.</span></h1>
+      <p class="lead">Custom canvas and upholstery for yachts of every size, with your patterns kept on file so every reorder fits like the first.</p>
+      <div class="ctas"><a class="btn" href="#contact">Start a project →</a><a class="btn line" href="#services">Our services</a></div>
+    </div>
+    <div class="spec" aria-hidden="true">
+      <h4><span>JOB SHEET</span><span>#MT-0427</span></h4>
+      <div class="row"><span>Item</span><b>Flybridge sunpad cover</b></div>
+      <div class="row"><span>Fabric</span><b>Sunbrella®</b></div>
+      <div class="row"><span>Pattern</span><b>On file ✓</b></div>
+      <div class="row"><span>Location</span><b>On-site, BVI</b></div>
+      <div class="row"><span>Status</span><b>In production</b></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+<div class="bar">
+  <div><div class="mono">Fabric</div><strong>3 Sunbrella® collections</strong><p>Ready to spec for your exterior.</p></div>
+  <div><div class="mono">Precision</div><strong>Patterns kept on file</strong><p>Reorders made to the exact same cut.</p></div>
+  <div><div class="mono">Coverage</div><strong>On-site, beyond St. Thomas</strong><p>We come to the yacht.</p></div>
+</div>
+
+<section id="services">
+  <div class="mono">// Services</div>
+  <h2>Everything above and below deck.</h2>
+  <p class="sub">From a single replacement cushion to a full exterior refit, done to the standard superyacht crews expect.</p>
+  <div class="svc">
+    <div><div class="mono">01</div><h3>Exterior canvas</h3><p>Biminis, enclosures, sun awnings and shade structures.</p></div>
+    <div><div class="mono">02</div><h3>Covers</h3><p>Tender, console, helm, furniture and equipment covers.</p></div>
+    <div><div class="mono">03</div><h3>Exterior upholstery</h3><p>Sunpads, deck cushions and seating, made to measure.</p></div>
+    <div><div class="mono">04</div><h3>Interior upholstery</h3><p>Saloon and cabin seating, headboards and panels.</p></div>
+    <div><div class="mono">05</div><h3>Repairs &amp; restitching</h3><p>Fast turnaround on worn seams, zips and fittings.</p></div>
+    <div><div class="mono">06</div><h3>On-site work</h3><p>Templating and fitting wherever your yacht is.</p></div>
+  </div>
+</section>
+
+<section id="patterns" style="padding-top:0">
+  <div class="pattern">
+    <svg viewBox="0 0 480 340" aria-hidden="true">
+      <g stroke="rgba(143,163,184,.25)"><path d="M0 40h480M0 80h480M0 120h480M0 160h480M0 200h480M0 240h480M0 280h480M0 320h480M40 0v340M80 0v340M120 0v340M160 0v340M200 0v340M240 0v340M280 0v340M320 0v340M360 0v340M400 0v340M440 0v340"/></g>
+      <path d="M70 250 C70 120 160 70 250 70 L410 70 L410 250 Z" fill="rgba(63,208,201,.08)" stroke="#3FD0C9" stroke-width="2.5"/>
+      <path d="M85 240 C85 132 168 86 250 86 L395 86 L395 240 Z" fill="none" stroke="#3FD0C9" stroke-dasharray="6 6" stroke-width="1.5" opacity=".7"/>
+      <g fill="#3FD0C9"><circle cx="70" cy="250" r="5"/><circle cx="410" cy="250" r="5"/><circle cx="410" cy="70" r="5"/><circle cx="250" cy="70" r="5"/></g>
+      <g font-family="IBM Plex Mono" font-size="12" fill="#8FA3B8"><text x="215" y="290">2,410 mm</text><text x="425" y="165">1,380</text><text x="96" y="58">PATTERN · SUNPAD-FWD · v3</text></g>
+      <path d="M70 275h340" stroke="#8FA3B8"/><path d="M70 268v14M410 268v14" stroke="#8FA3B8"/>
+    </svg>
+    <div>
+      <div class="mono">// Pattern library</div>
+      <h2>Measured once. Right every time.</h2>
+      <p class="sub" style="margin-bottom:20px">We keep the pattern for every piece we make, so when it's time to replace a cover or cushion, you just call. No re-templating, no waiting.</p>
+      <ul>
+        <li><b>Faster reorders</b>: skip the measuring visit.</li>
+        <li><b>Consistent fit</b>: the same cut as the original.</li>
+        <li><b>Easy handover</b>: new crew? Your specs are already with us.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="cta">
+    <div><div class="mono">// Contact</div><h2 style="margin-bottom:8px">Tell us about your yacht.</h2><p>Send the vessel name, location and what you need. We'll come back with a quote.</p></div>
+    <div class="ctas"><a class="btn" href="mailto:marinetechvi@gmail.com">marinetechvi@gmail.com</a><a class="btn line" href="tel:+13407744363">+1 340 774 4363</a></div>
+  </div>
+</section>
+
+<footer><span>© Marine Tech LLC · St. Thomas, U.S. Virgin Islands</span><span>Concept design by Maurice Francis · mauricefrancis.com</span></footer>
+</div>
+</body>
+</html>

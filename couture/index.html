@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Couture — Concept Homepage</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#F7F2EA;--linen:#EDE4D6;--black:#141210;--gold:#B08D57;--grey:#6E665C;--line:#D9CDBB}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--black);font-family:Jost,system-ui,sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.concept{background:var(--black);color:#bdb4a7;font-size:12.5px;text-align:center;padding:8px 16px;letter-spacing:.03em}
+.concept b{color:#fff;font-weight:500}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px}
+nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:26px 0;border-bottom:1px solid var(--line)}
+.nl,.nr{display:flex;gap:30px;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.nr{justify-content:flex-end}
+.logo{font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:500;letter-spacing:.32em;text-align:center}
+.logo small{display:block;font-family:Jost;font-size:9.5px;letter-spacing:.42em;color:var(--gold);margin-top:-4px}
+.hero{padding:90px 0 70px;text-align:center}
+.kicker{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:26px}
+h1{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:clamp(46px,7.5vw,104px);line-height:.98;letter-spacing:-.01em}
+h1 em{color:var(--gold)}
+.hero p{max-width:560px;margin:28px auto 40px;color:var(--grey);font-size:18px}
+.btn{display:inline-block;padding:15px 34px;border:1px solid var(--black);font-size:12px;letter-spacing:.24em;text-transform:uppercase;transition:all .2s}
+.btn:hover,.btn.solid{background:var(--black);color:var(--cream)}
+.btn.solid:hover{background:var(--gold);border-color:var(--gold)}
+.ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.swatches{display:grid;grid-template-columns:repeat(6,1fr);height:140px;margin-top:20px}
+.swatches div{position:relative}
+.swatches div::after{content:attr(data-n);position:absolute;bottom:10px;left:12px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+.split{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:90px}
+.half{padding:72px 56px}
+.half+.half{border-left:1px solid var(--line);background:var(--linen)}
+.num{font-family:"Cormorant Garamond",serif;font-size:15px;color:var(--gold);letter-spacing:.2em}
+h2{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:clamp(36px,4.5vw,56px);line-height:1.05;margin:12px 0 20px}
+.half p{color:var(--grey);margin-bottom:26px;max-width:440px}
+.list{list-style:none;margin-bottom:34px}
+.list li{padding:13px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;font-size:15px}
+.list li span{color:var(--gold);font-family:"Cormorant Garamond",serif;font-style:italic}
+.gallery{padding:100px 0}
+.ghead{display:flex;justify-content:space-between;align-items:end;margin-bottom:36px;gap:24px;flex-wrap:wrap}
+.gg{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:14px}
+.gg div{background:var(--linen);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:18px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--grey)}
+.gg div:first-child{grid-row:span 2}
+.gg svg{position:absolute;inset:0;width:100%;height:100%}
+.gg span{position:relative}
+.founder{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center;padding:20px 0 100px}
+.portrait{aspect-ratio:4/5;background:linear-gradient(160deg,#D9CDBB,#B9A68A);display:grid;place-items:center;color:#fff;font-family:"Cormorant Garamond",serif;font-size:90px;font-style:italic}
+blockquote{font-family:"Cormorant Garamond",serif;font-size:clamp(26px,3vw,36px);line-height:1.3;font-style:italic;margin:16px 0 24px}
+.sig{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--grey)}
+.contact{background:var(--black);color:var(--cream);text-align:center;padding:100px 24px}
+.contact h2{color:var(--cream)}
+.contact p{color:#a99f91;max-width:520px;margin:0 auto 36px}
+.contact .btn{border-color:var(--cream)}
+.contact .btn.solid{background:var(--cream);color:var(--black)}
+.contact .btn:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+.contact .meta{margin-top:36px;font-size:13px;letter-spacing:.1em;color:#a99f91}
+footer{background:var(--black);color:#6f675d;font-size:12px;text-align:center;padding:0 16px 28px}
+@media (max-width:900px){.split{grid-template-columns:1fr}.half+.half{border-left:0;border-top:1px solid var(--line)}.founder{grid-template-columns:1fr;gap:36px}.portrait{max-width:320px}}
+@media (max-width:720px){.wrap{padding:0 16px}nav{grid-template-columns:1fr;justify-items:center;gap:14px}.nl{display:none}.nr{justify-content:center}.half{padding:52px 20px}.swatches{grid-template-columns:repeat(3,1fr);height:180px}.gg{grid-template-columns:1fr 1fr;grid-template-rows:200px 140px 140px}.gg div:first-child{grid-column:span 2;grid-row:auto}.hero{padding:56px 0 40px}}
+</style>
+</head>
+<body>
+<div class="concept">Concept homepage prepared for <b>Couture</b> by Maurice Francis · not the official website</div>
+<div class="wrap">
+<nav>
+  <div class="nl"><a href="#atelier">Atelier</a><a href="#boutique">Boutique</a></div>
+  <div class="logo">COUTURE<small>ST. MARTIN · CARIBBEAN</small></div>
+  <div class="nr"><a href="#work">Work</a><a href="#contact">Contact</a></div>
+</nav>
+
+<header class="hero">
+  <div class="kicker">Yacht interiors · Fabrics · Décor</div>
+  <h1>Interiors, tailored<br><em>to the boat.</em></h1>
+  <p>From the saloon to the sundeck, Couture designs and makes the soft furnishings that make a yacht feel like home, and runs the fabric and décor shop to match.</p>
+  <div class="ctas"><a class="btn solid" href="#contact">Book a consultation</a><a class="btn" href="#boutique">Visit the boutique</a></div>
+</header>
+</div>
+
+<div class="swatches" aria-hidden="true">
+  <div style="background:#1F3A4D" data-n="Navy"></div>
+  <div style="background:#B08D57" data-n="Brass"></div>
+  <div style="background:#D9CDBB" data-n="Linen"></div>
+  <div style="background:#7C8B78" data-n="Sage"></div>
+  <div style="background:#C46E4E" data-n="Terracotta"></div>
+  <div style="background:#2A2724" data-n="Ebony"></div>
+</div>
+
+<div class="split">
+  <div class="half" id="atelier">
+    <div class="num">I — THE ATELIER</div>
+    <h2>Made to measure, made to last.</h2>
+    <p>Our atelier works with captains, owners and crew to design and sew interiors and exteriors that stand up to life on the water.</p>
+    <ul class="list">
+      <li>Yacht interiors <span>bespoke</span></li>
+      <li>Canvas &amp; covers <span>marine-grade</span></li>
+      <li>Blinds &amp; curtains <span>made to fit</span></li>
+      <li>Custom linens <span>monogram on request</span></li>
+    </ul>
+    <a class="btn" href="#contact">Start a project</a>
+  </div>
+  <div class="half" id="boutique">
+    <div class="num">II — THE BOUTIQUE</div>
+    <h2>Fabrics &amp; décor for boat and home.</h2>
+    <p>Come and see the fabrics in person. Our shop stocks textiles and décor pieces chosen for the Caribbean light, for yachts and villas alike.</p>
+    <ul class="list">
+      <li>Upholstery &amp; drapery fabrics <span>by the metre</span></li>
+      <li>Cushions &amp; throws <span>ready to go</span></li>
+      <li>Décor &amp; accessories <span>curated</span></li>
+      <li>Samples &amp; swatches <span>take them aboard</span></li>
+    </ul>
+    <a class="btn" href="#contact">Plan a visit</a>
+  </div>
+</div>
+
+<div class="wrap">
+<section class="gallery" id="work">
+  <div class="ghead"><div><div class="kicker" style="margin-bottom:6px">Selected work</div><h2 style="margin:0">From our atelier</h2></div><p style="color:var(--grey);max-width:360px">[Your project photos go here: saloons, sundecks, cabins and covers.]</p></div>
+  <div class="gg" aria-hidden="true">
+    <div><svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><rect width="400" height="500" fill="#E3D8C7"/><rect x="40" y="250" width="320" height="110" rx="20" fill="#1F3A4D"/><rect x="60" y="200" width="90" height="70" rx="14" fill="#D9CDBB"/><rect x="160" y="205" width="90" height="65" rx="14" fill="#B08D57"/><rect x="255" y="200" width="90" height="70" rx="14" fill="#D9CDBB"/><rect x="40" y="60" width="320" height="110" fill="#F7F2EA"/><path d="M40 60h320v110H40z" fill="none" stroke="#B9A68A"/><path d="M80 60v110M140 60v110M200 60v110M260 60v110M320 60v110" stroke="#E3D8C7" stroke-width="10"/></svg><span>Saloon</span></div>
+    <div><svg viewBox="0 0 200 240" preserveAspectRatio="xMidYMid slice"><rect width="200" height="240" fill="#7C8B78"/><rect x="30" y="120" width="140" height="60" rx="12" fill="#F7F2EA"/><rect x="45" y="95" width="50" height="35" rx="8" fill="#C46E4E"/></svg><span style="color:#fff">Sundeck</span></div>
+    <div><svg viewBox="0 0 200 240" preserveAspectRatio="xMidYMid slice"><rect width="200" height="240" fill="#D9CDBB"/><rect x="25" y="130" width="150" height="70" rx="8" fill="#fff"/><rect x="40" y="110" width="55" height="30" rx="8" fill="#1F3A4D"/><rect x="105" y="110" width="55" height="30" rx="8" fill="#1F3A4D"/></svg><span>Cabin</span></div>
+    <div><svg viewBox="0 0 200 240" preserveAspectRatio="xMidYMid slice"><rect width="200" height="240" fill="#2A2724"/><path d="M20 170 Q100 90 180 170Z" fill="#B08D57"/><path d="M20 170h160" stroke="#D9CDBB" stroke-width="4"/></svg><span style="color:#D9CDBB">Covers</span></div>
+    <div><svg viewBox="0 0 200 240" preserveAspectRatio="xMidYMid slice"><rect width="200" height="240" fill="#F1E9DC"/><g fill="#B08D57"><rect x="20" y="30" width="30" height="180"/><rect x="60" y="30" width="30" height="180" fill="#1F3A4D"/><rect x="100" y="30" width="30" height="180" fill="#C46E4E"/><rect x="140" y="30" width="30" height="180" fill="#7C8B78"/></g></svg><span>Fabrics</span></div>
+  </div>
+</section>
+
+<section class="founder">
+  <div class="portrait">R</div>
+  <div>
+    <div class="kicker">Founder</div>
+    <blockquote>[A short line from Risje on why she started Couture and what she loves about dressing a yacht.]</blockquote>
+    <div class="sig">Risje van Eijk · Founder, Couture</div>
+  </div>
+</section>
+</div>
+
+<section class="contact" id="contact">
+  <div class="kicker">Get in touch</div>
+  <h2>Let's dress your yacht.</h2>
+  <p>Tell us about your boat or your home and what you have in mind. We'll set up a consultation, on board or in the boutique.</p>
+  <div class="ctas"><a class="btn solid" href="mailto:couturecaraibes@gmail.com">Email the atelier</a><a class="btn" href="tel:+17215230607">Call +1 721 523 0607</a></div>
+  <div class="meta">Atelier · couturecaraibes@gmail.com &nbsp;&nbsp;|&nbsp;&nbsp; Boutique · couturesxm@gmail.com</div>
+</section>
+<footer>© Couture · Concept design by Maurice Francis · mauricefrancis.com</footer>
+</body>
+</html>

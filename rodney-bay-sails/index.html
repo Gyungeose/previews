@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodney Bay Sails — Concept Homepage</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--lagoon:#0FA3A3;--lagoon2:#0B7C80;--palm:#1E5B3A;--sand:#FFF7EA;--sunny:#FFC84A;--ink:#12302F;--muted:#536866;--line:#E8DFCC}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--sand);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.concept{background:var(--ink);color:#bcd0cd;font-size:12.5px;text-align:center;padding:8px 16px}
+.concept b{color:#fff}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+.hero{background:linear-gradient(180deg,#BFEFEA 0%,#E9FAF6 55%,var(--sand) 100%);position:relative;overflow:hidden}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;position:relative;z-index:2}
+.logo{font-family:"DM Serif Display",serif;font-size:26px;color:var(--palm);display:flex;align-items:center;gap:10px}
+.logo svg{width:30px;height:30px}
+.links{display:flex;gap:28px;font-weight:500;font-size:15px}
+.btn{display:inline-block;background:var(--palm);color:#fff;padding:14px 26px;border-radius:999px;font-weight:700;font-size:15px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.sun{background:var(--sunny);color:var(--ink)}
+.btn.out{background:#fff;color:var(--palm);border:2px solid var(--palm)}
+.hcopy{position:relative;z-index:2;max-width:640px;padding:56px 0 290px}
+.pill{display:inline-block;background:#fff;border-radius:999px;padding:6px 16px;font-size:14px;font-weight:500;color:var(--lagoon2);margin-bottom:22px;box-shadow:0 2px 10px rgba(15,163,163,.15)}
+h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(44px,6.6vw,82px);line-height:1;color:var(--ink);margin-bottom:22px}
+h1 em{color:var(--lagoon2)}
+.lead{font-size:19px;color:var(--muted);margin-bottom:32px;max-width:540px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+.scene{position:absolute;left:0;right:0;bottom:0;z-index:1}
+.scene svg{display:block;width:100%;height:auto;min-height:260px}
+.arrive{background:var(--lagoon);color:#fff}
+.arrive .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:30px;padding-bottom:30px;flex-wrap:wrap}
+.arrive b{font-family:"DM Serif Display",serif;font-weight:400;font-size:28px}
+.arrive p{opacity:.9}
+section{padding:90px 0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--lagoon2);margin-bottom:12px}
+h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(32px,4.4vw,52px);line-height:1.05;margin-bottom:14px}
+.sub{color:var(--muted);max-width:560px;margin-bottom:44px;font-size:17px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:22px;padding:32px 28px;border:1px solid var(--line);position:relative;overflow:hidden}
+.card .blob{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;margin-bottom:20px}
+.card h3{font-family:"DM Serif Display",serif;font-weight:400;font-size:26px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px;margin-bottom:14px}
+.card ul{list-style:none;font-size:14.5px}
+.card li{padding:5px 0 5px 22px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:13px;width:10px;height:10px;border-radius:50%;background:var(--sunny)}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stats div{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+.stats b{display:block;font-family:"DM Serif Display",serif;font-weight:400;font-size:30px;color:var(--palm)}
+.stats span{color:var(--muted);font-size:14.5px}
+.contact{background:var(--palm);color:#fff;border-radius:30px;padding:64px;text-align:center}
+.contact h2{color:#fff}
+.contact p{color:#c9e2d4;max-width:520px;margin:0 auto 30px}
+.contact .ctas{justify-content:center}
+.contact .meta{margin-top:24px;color:#c9e2d4;font-size:14.5px}
+footer{padding:30px 0;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:900px){.svc{grid-template-columns:1fr}.why{grid-template-columns:1fr}}
+@media (max-width:720px){.wrap{padding:0 16px}.links{display:none}.hcopy{padding:24px 0 210px}section{padding:60px 0}.contact{padding:44px 22px}nav .btn{padding:10px 16px;font-size:14px}}
+</style>
+</head>
+<body>
+<div class="concept">Concept homepage prepared for <b>Rodney Bay Sails</b> by Maurice Francis · not the official website</div>
+<header class="hero">
+  <div class="wrap">
+    <nav>
+      <div class="logo"><svg viewBox="0 0 30 30"><path d="M15 2v24" stroke="#1E5B3A" stroke-width="2"/><path d="M16.5 4 Q26 14 26 24 H16.5Z" fill="#0FA3A3"/><path d="M13.5 8 Q6 16 5 24 H13.5Z" fill="#FFC84A"/></svg>Rodney Bay Sails</div>
+      <div class="links"><a href="#services">Services</a><a href="#why">Why us</a><a href="#contact">Contact</a></div>
+      <a class="btn" href="#contact">Book a repair</a>
+    </nav>
+    <div class="hcopy">
+      <div class="pill">⛵ Rodney Bay · St. Lucia</div>
+      <h1>Your sails, ready for <em>the next passage.</em></h1>
+      <p class="lead">Sail repairs, canvas work, new Doyle sails and Selden rigging, all right here in Rodney Bay, so you can spend your time ashore, not waiting on parts.</p>
+      <div class="ctas"><a class="btn" href="#contact">Book a repair</a><a class="btn out" href="#services">See services</a></div>
+    </div>
+  </div>
+  <div class="scene" aria-hidden="true">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="xMidYMax slice">
+      <circle cx="1180" cy="90" r="56" fill="#FFC84A"/>
+      <path d="M760 250 L900 70 Q915 50 930 72 L1010 250Z" fill="#2E7A4E"/>
+      <path d="M960 250 L1060 120 Q1072 104 1084 122 L1150 250Z" fill="#1E5B3A"/>
+      <path d="M0 250 Q240 200 480 235 T960 230 T1440 220 V320 H0Z" fill="#3E8E5F" opacity=".55"/>
+      <path d="M0 262 Q360 240 720 262 T1440 258 V320 H0Z" fill="#0FA3A3"/>
+      <path d="M0 290 Q360 272 720 290 T1440 288 V320 H0Z" fill="#0B7C80"/>
+      <g transform="translate(300 180)"><path d="M40 0 V78" stroke="#12302F" stroke-width="3"/><path d="M43 4 Q80 40 84 74 H43Z" fill="#fff"/><path d="M37 14 Q12 44 8 74 H37Z" fill="#FFF7EA"/><path d="M0 80 H96 L84 94 H12Z" fill="#12302F"/></g>
+      <g transform="translate(560 205) scale(.65)"><path d="M40 0 V78" stroke="#12302F" stroke-width="3"/><path d="M43 4 Q80 40 84 74 H43Z" fill="#fff"/><path d="M37 14 Q12 44 8 74 H37Z" fill="#FFC84A"/><path d="M0 80 H96 L84 94 H12Z" fill="#12302F"/></g>
+    </svg>
+  </div>
+</header>
+
+<div class="arrive">
+  <div class="wrap">
+    <div><b>Arriving in Rodney Bay?</b><p>Message us before you drop anchor and we'll have a slot ready for your sails.</p></div>
+    <a class="btn sun" href="https://wa.me/17585840291">WhatsApp ahead</a>
+  </div>
+</div>
+
+<div class="wrap">
+<section id="services">
+  <div class="eyebrow">What we do</div>
+  <h2>Everything your rig needs.</h2>
+  <p class="sub">Whether you've just finished an Atlantic crossing or you're getting ready to head down island, we'll get you sorted.</p>
+  <div class="svc">
+    <div class="card"><div class="blob" style="background:#DDF5F2"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B7C80" stroke-width="2"><path d="M12 2v18"/><path d="M13 4q7 7 7 14h-7z"/></svg></div><h3>Sail repair</h3><p>Fast fixes for the wear and tear of a long passage.</p><ul><li>Tears and blown seams</li><li>Chafe patches</li><li>UV strip replacement</li></ul></div>
+    <div class="card"><div class="blob" style="background:#FFF0CC"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B9860A" stroke-width="2"><path d="M3 15c4-8 14-8 18 0"/><path d="M3 15h18M6 15v5M18 15v5"/></svg></div><h3>Canvas work</h3><p>Shade and protection made for the Caribbean sun.</p><ul><li>Biminis and dodgers</li><li>Sail and hatch covers</li><li>Repairs and zips</li></ul></div>
+    <div class="card"><div class="blob" style="background:#E0EFE5"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1E5B3A" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16"/></svg></div><h3>Doyle sails &amp; Selden rigging</h3><p>New sails and rigging through our Doyle and Selden agencies.</p><ul><li>Measured on your boat</li><li>New Doyle sails</li><li>Selden furlers and spars</li></ul></div>
+  </div>
+</section>
+
+<section id="why" style="padding-top:0">
+  <div class="why">
+    <div>
+      <div class="eyebrow">Why cruisers come to us</div>
+      <h2>Right in Rodney Bay, right when you need it.</h2>
+      <p class="sub" style="margin-bottom:0">Rodney Bay is the first stop for a lot of boats arriving in the Caribbean. We're right there to get your sails and rigging back in shape before you sail on.</p>
+    </div>
+    <div class="stats">
+      <div><b>Doyle</b><span>Authorised sails agent</span></div>
+      <div><b>Selden</b><span>Rigging and furlers</span></div>
+      <div><b>On site</b><span>At Rodney Bay, St. Lucia</span></div>
+      <div><b>Quick quotes</b><span>Send photos, get a price</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:0">
+  <div class="contact">
+    <div class="eyebrow" style="color:#FFC84A">Get in touch</div>
+    <h2>Tell us what needs fixing.</h2>
+    <p>Send a photo of the damage and your boat's name. We'll get back to you with a quote and a time.</p>
+    <div class="ctas"><a class="btn sun" href="tel:+17585840291">Call +1 758 584 0291</a><a class="btn out" href="mailto:rodneybaysails@hotmail.com">Email us</a></div>
+    <p class="meta">rodneybaysails@hotmail.com · Rodney Bay, St. Lucia</p>
+  </div>
+</section>
+
+<footer><span>© Rodney Bay Sails</span><span>Concept design by Maurice Francis · mauricefrancis.com</span></footer>
+</div>
+</body>
+</html>

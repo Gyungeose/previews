@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bequia Canvas — Concept Homepage</title>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--cloth:#F6F1E7;--cloth2:#ECE4D4;--indigo:#26345E;--indigo2:#1A2546;--mustard:#E0A526;--ink:#1F2433;--muted:#5C6070;--line:#DCD3C1}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cloth);color:var(--ink);font-family:"Instrument Sans",system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.concept{background:var(--indigo2);color:#C3C8DA;font-size:12.5px;text-align:center;padding:8px 16px}
+.concept b{color:#fff}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-family:"Young Serif",serif;font-size:23px;color:var(--indigo)}
+.links{display:flex;gap:30px;font-size:15px;font-weight:500}
+.links a{color:var(--muted)}
+.links a:hover{color:var(--indigo)}
+.btn{display:inline-block;background:var(--indigo);color:#fff;padding:14px 24px;border-radius:10px;font-weight:600;font-size:15px;transition:background .15s}
+.btn:hover{background:var(--indigo2)}
+.btn.alt{background:transparent;color:var(--indigo);box-shadow:inset 0 0 0 2px var(--indigo)}
+.btn.alt:hover{background:var(--indigo);color:#fff}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:40px 0 88px}
+.where{font-size:14px;font-weight:600;color:var(--indigo);margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.where i{width:28px;height:2px;background:var(--mustard)}
+h1{font-family:"Young Serif",serif;font-weight:400;font-size:clamp(40px,5.6vw,66px);line-height:1.06;color:var(--indigo2);margin-bottom:22px;text-wrap:balance}
+.lead{font-size:19px;color:var(--muted);max-width:500px;margin-bottom:32px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.stack{position:relative;height:440px}
+.sw{position:absolute;border-radius:20px;padding:14px}
+.sw .in{width:100%;height:100%;border-radius:6px;border:2px dashed rgba(255,255,255,.55)}
+.s1{inset:0 70px 90px 0;background:var(--indigo);transform:rotate(-4deg)}
+.s1 .in{background:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 6px,transparent 6px 12px)}
+.s2{inset:60px 0 30px 110px;background:#C9B48C;transform:rotate(3deg)}
+.s2 .in{background:repeating-linear-gradient(90deg,rgba(0,0,0,.05) 0 3px,transparent 3px 7px)}
+.s3{left:40px;bottom:0;width:230px;height:150px;background:var(--mustard);transform:rotate(-2deg)}
+.tag{position:absolute;right:30px;bottom:56px;background:#fff;border-radius:14px;padding:16px 18px;box-shadow:0 12px 30px rgba(26,37,70,.18);font-size:14px;max-width:220px}
+.tag b{display:block;font-family:"Young Serif",serif;font-weight:400;font-size:18px;color:var(--indigo2);margin-bottom:2px}
+section{padding:88px 0}
+h2{font-family:"Young Serif",serif;font-weight:400;font-size:clamp(30px,3.8vw,44px);line-height:1.12;color:var(--indigo2);margin-bottom:14px;text-wrap:balance}
+.sub{color:var(--muted);font-size:17px;max-width:560px;margin-bottom:44px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.half{border-radius:22px;padding:40px}
+.boat{background:var(--indigo);color:#DCE0EE}
+.home{background:#fff;border:1px solid var(--line)}
+.half h3{font-family:"Young Serif",serif;font-weight:400;font-size:28px;margin-bottom:8px}
+.boat h3{color:#fff}.home h3{color:var(--indigo2)}
+.half p{margin-bottom:22px}
+.home p{color:var(--muted)}
+.half ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.half li{display:flex;gap:10px;align-items:baseline;font-size:15.5px}
+.half li::before{content:"";flex:none;width:8px;height:8px;border-radius:2px;background:var(--mustard);transform:translateY(-1px)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.step{padding:30px 28px 0 0}
+.step+.step{padding-left:28px;border-left:1px solid var(--line)}
+.num{font-family:"Young Serif",serif;font-size:15px;color:var(--mustard);font-variant-numeric:tabular-nums;margin-bottom:12px}
+.step h4{font-size:19px;font-weight:600;color:var(--indigo2);margin-bottom:6px}
+.step p{color:var(--muted);font-size:15.5px}
+.contact{background:var(--cloth2);border-radius:28px;padding:64px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.contact p{color:var(--muted);font-size:17px;max-width:460px}
+.card{background:#fff;border-radius:16px;padding:26px}
+.card dt{font-size:13px;font-weight:600;color:var(--muted);margin-top:14px}
+.card dt:first-child{margin-top:0}
+.card dd{font-size:16px;color:var(--ink)}
+.card .btn{margin-top:22px;display:block;text-align:center}
+footer{padding:30px 0;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:900px){.hero{grid-template-columns:1fr;gap:32px}.stack{height:340px;max-width:460px}.two{grid-template-columns:1fr}.contact{grid-template-columns:1fr;padding:40px 28px}}
+@media (max-width:720px){.wrap{padding:0 16px}.links{display:none}nav .btn{padding:10px 16px;font-size:14px}.hero{padding:16px 0 56px}section{padding:56px 0}.half{padding:28px 22px}.half ul{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.step,.step+.step{padding:24px 0;border-left:0;border-top:1px solid var(--line)}.stack{height:280px}.tag{right:8px;bottom:30px}.s3{width:160px;height:110px}}
+</style>
+</head>
+<body>
+<div class="concept">Concept homepage prepared for <b>Bequia Canvas</b> by Maurice Francis · not the official website</div>
+<div class="wrap">
+<nav>
+<div class="logo">Bequia Canvas</div>
+<div class="links"><a href="#boats">Boats</a><a href="#homes">Homes</a><a href="#contact">Contact</a></div>
+<a class="btn" href="#contact">Ask for a quote</a>
+</nav>
+<div class="hero">
+<div>
+<div class="where"><i></i>Admiralty Bay, Bequia</div>
+<h1>Covers and cushions, cut and sewn in Bequia.</h1>
+<p class="lead">Boat covers, biminis and soft furnishings for the boats in the bay, and for the homes on the hill. Made to measure, made to last in island sun.</p>
+<div class="ctas"><a class="btn" href="#contact">Tell us what you need</a><a class="btn alt" href="#boats">See what we make</a></div>
+</div>
+<div class="stack" aria-hidden="true">
+<div class="sw s1"><div class="in"></div></div>
+<div class="sw s2"><div class="in"></div></div>
+<div class="sw s3"><div class="in"></div></div>
+<div class="tag"><b>On your mooring?</b>We come out to measure, so it fits the first time.</div>
+</div>
+</div>
+</div>
+<div class="wrap">
+<section id="boats" style="padding-top:0">
+<h2>One loft, two kinds of work.</h2>
+<p class="sub">Whether it lives on the water or on your veranda, every piece is measured, cut and sewn by hand here on the island.</p>
+<div class="two">
+<div class="half boat">
+<h3>For your boat</h3>
+<p>Protection and comfort for cruisers, charter boats and yachts anchored in the bay.</p>
+<ul><li>Boat &amp; sail covers</li><li>Biminis &amp; dodgers</li><li>Cockpit cushions</li><li>Hatch &amp; winch covers</li><li>Repairs &amp; new zips</li><li>Interior upholstery</li></ul>
+</div>
+<div class="half home" id="homes">
+<h3>For your home</h3>
+<p>Soft furnishings for villas, guesthouses and verandas around Bequia.</p>
+<ul><li>Outdoor cushions</li><li>Sun shades &amp; awnings</li><li>Curtains</li><li>Re-covering furniture</li><li>Bed &amp; daybed covers</li><li>Custom pieces</li></ul>
+</div>
+</div>
+</section>
+<section style="padding-top:0">
+<h2>From a photo to a perfect fit.</h2>
+<p class="sub">No need to come ashore with measurements. Start with a message.</p>
+<div class="steps">
+<div class="step"><div class="num">01</div><h4>Send us a photo</h4><p>Show us the boat or the room and what you have in mind.</p></div>
+<div class="step"><div class="num">02</div><h4>We measure on site</h4><p>We come to your mooring, dock or home to get it exact.</p></div>
+<div class="step"><div class="num">03</div><h4>Sewn and fitted</h4><p>Made in our loft and fitted by us, so you know it's right.</p></div>
+</div>
+</section>
+<section id="contact" style="padding-top:0">
+<div class="contact">
+<div>
+<h2>Anchored in Admiralty Bay?</h2>
+<p>Email us before you drop anchor, with a photo of what needs covering or re-covering, and we'll come back with a price.</p>
+</div>
+<dl class="card">
+<dt>Email</dt><dd>beqcan@vincysurf.com</dd>
+<dt>Where</dt><dd>Admiralty Bay, Bequia, St Vincent &amp; the Grenadines</dd>
+<dt>Hours</dt><dd>[Your opening hours]</dd>
+<a class="btn" href="mailto:beqcan@vincysurf.com">Email Bequia Canvas</a>
+</dl>
+</div>
+</section>
+<footer><span>© Bequia Canvas</span><span>Concept design by Maurice Francis · mauricefrancis.com</span></footer>
+</div>
+</body>
+</html>

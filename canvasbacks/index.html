@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canvasbacks — Concept Homepage</title>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700;800&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bone:#F7F4EE;--navy:#1B2B44;--brick:#A63D2F;--muted:#5E6470;--line:#DED8CC;--fog:#E9E5DC}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bone);color:var(--navy);font-family:"Alegreya Sans",system-ui,sans-serif;font-size:17px;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.concept{background:var(--navy);color:#B6BFCC;font-size:12.5px;text-align:center;padding:8px 16px}
+.concept b{color:#fff}
+.notice{background:var(--brick);color:#fff;text-align:center;font-size:15px;padding:10px 16px}
+.notice b{font-weight:700}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}
+.logo{font-family:Alegreya,serif;font-weight:800;font-size:26px}
+.logo small{display:block;font-family:"Alegreya Sans",sans-serif;font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:-4px}
+.links{display:flex;gap:28px;font-weight:500;color:var(--muted)}
+.btn{display:inline-block;background:var(--navy);color:#fff;padding:13px 24px;border-radius:4px;font-weight:700;font-size:16px;transition:background .15s}
+.btn:hover{background:#0F1C30}
+.btn.red{background:var(--brick)}
+.btn.red:hover{background:#8C3226}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:64px 0 84px}
+.kick{font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--brick);margin-bottom:16px}
+h1{font-family:Alegreya,serif;font-weight:800;font-size:clamp(42px,5.8vw,70px);line-height:1.02;margin-bottom:22px;text-wrap:balance}
+.lead{font-size:20px;color:var(--muted);max-width:500px;margin-bottom:30px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.sail{position:relative;width:100%;max-width:440px;aspect-ratio:1/1;margin-left:auto}
+.sail svg{width:100%;height:100%}
+section{padding:84px 0}
+h2{font-family:Alegreya,serif;font-weight:800;font-size:clamp(32px,4vw,48px);line-height:1.06;margin-bottom:14px;text-wrap:balance}
+.sub{color:var(--muted);font-size:18px;max-width:560px;margin-bottom:42px}
+.year{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+.q{padding:28px 24px}
+.q+.q{border-left:1px solid var(--line)}
+.q.now{background:var(--navy);color:#fff}
+.q .m{font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--brick);margin-bottom:8px}
+.q.now .m{color:#F2B8AE}
+.q h3{font-family:Alegreya,serif;font-weight:700;font-size:24px;margin-bottom:6px}
+.q p{color:var(--muted);font-size:16px}
+.q.now p{color:#C9D1DC}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 40px}
+.svc div{border-top:2px solid var(--navy);padding-top:16px}
+.svc h3{font-family:Alegreya,serif;font-weight:700;font-size:23px;margin-bottom:4px}
+.svc p{color:var(--muted);font-size:16px}
+.bay{background:var(--fog)}
+.bay .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding-top:84px;padding-bottom:84px}
+.bay p{color:var(--muted);font-size:18px;margin-bottom:14px}
+.card{background:#fff;border-radius:10px;padding:30px;border:1px solid var(--line)}
+.card dt{font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:16px}
+.card dt:first-child{margin-top:0}
+.card dd{font-size:18px}
+.card .btn{margin-top:24px}
+footer{padding:30px 0;font-size:14px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:900px){.hero,.bay .wrap{grid-template-columns:1fr}.year{grid-template-columns:1fr 1fr}.q:nth-child(3){border-left:0}.q:nth-child(n+3){border-top:1px solid var(--line)}.svc{grid-template-columns:1fr 1fr}.sail{max-width:360px;margin:0 auto}}
+@media (max-width:720px){.wrap{padding:0 16px}.links{display:none}nav .btn{padding:10px 14px;font-size:15px}.hero{padding:32px 0 56px}section{padding:56px 0}.year{grid-template-columns:1fr}.q+.q{border-left:0;border-top:1px solid var(--line)}.svc{grid-template-columns:1fr}.sail{max-width:280px}}
+</style>
+</head>
+<body>
+<div class="concept">Concept homepage prepared for <b>Canvasbacks</b> by Maurice Francis · not the official website</div>
+<div class="notice"><b>Hauling out?</b> Drop off your sails and canvas now for winter cleaning and repair.</div>
+<div class="wrap">
+<nav><div class="logo">Canvasbacks<small>Sail Loft &amp; Canvas Shop</small></div><div class="links"><a href="#season">Winter service</a><a href="#services">Services</a><a href="#visit">Visit</a></div><a class="btn" href="#visit">Get a quote</a></nav>
+<div class="hero">
+<div><div class="kick">North Kingstown, Rhode Island</div>
+<h1>Sails and canvas, ready for the next season on the Bay.</h1>
+<p class="lead">Repairs, new canvas and winter service for Narragansett Bay boats, from a loft that has been doing it for years.</p>
+<div class="ctas"><a class="btn red" href="#season">Book winter service</a><a class="btn" href="#services">See what we do</a></div></div>
+<div class="sail" aria-hidden="true"><svg viewBox="0 0 400 400"><rect width="400" height="400" rx="12" fill="#E9E5DC"/><path d="M0 300 Q100 285 200 300 T400 300 V400 H0Z" fill="#1B2B44"/><path d="M0 322 Q100 308 200 322 T400 322" stroke="#F7F4EE" stroke-width="2" fill="none" opacity=".5"/><path d="M210 60 V280" stroke="#1B2B44" stroke-width="5"/><path d="M214 70 Q300 170 320 270 H214Z" fill="#fff" stroke="#1B2B44" stroke-width="2"/><path d="M206 90 Q140 180 110 270 H206Z" fill="#A63D2F"/><path d="M214 130 L300 130 M214 190 L312 190" stroke="#DED8CC" stroke-width="2"/><path d="M100 280 H330 L310 300 H120Z" fill="#1B2B44"/></svg></div>
+</div>
+</div>
+<div class="wrap">
+<section id="season" style="padding-top:0">
+<h2>A loft that works with the seasons.</h2>
+<p class="sub">New England boating runs on a calendar. Here's how we help you through it.</p>
+<div class="year">
+<div class="q now"><div class="m">Now · Fall</div><h3>Haul-out drop-off</h3><p>Bring in sails, dodgers and covers as the boat comes out.</p></div>
+<div class="q"><div class="m">Winter</div><h3>Clean, repair, build</h3><p>Washing, restitching and new canvas while she's on the hard.</p></div>
+<div class="q"><div class="m">Spring</div><h3>Ready to bend on</h3><p>Everything back to you, fitted for launch day.</p></div>
+<div class="q"><div class="m">Summer</div><h3>Quick fixes</h3><p>Rips and seams turned around fast, mid-season.</p></div>
+</div>
+</section>
+<section id="services" style="padding-top:0">
+<h2>What we make and mend.</h2>
+<p class="sub">[A sentence about your loft and how long you've served the Bay, in your own words.]</p>
+<div class="svc">
+<div><h3>Sail repair</h3><p>Tears, chafe, UV covers and restitching.</p></div>
+<div><h3>Dodgers &amp; biminis</h3><p>New builds and window replacements.</p></div>
+<div><h3>Winter covers</h3><p>Custom covers that shed New England snow.</p></div>
+<div><h3>Sail cleaning</h3><p>Washed, checked and stored over winter.</p></div>
+<div><h3>Cushions</h3><p>Cockpit and interior, made to fit.</p></div>
+<div><h3>Custom canvas</h3><p>Bags, covers and one-off projects.</p></div>
+</div>
+</section>
+</div>
+<div class="bay" id="visit"><div class="wrap">
+<div><h2>Stop by the loft.</h2><p>Bring your sail or canvas in, or email photos and measurements, and we'll give you a quote.</p><p>[Address, North Kingstown, RI]</p></div>
+<dl class="card"><dt>Email</dt><dd>canvasbacks@gmail.com</dd><dt>Phone</dt><dd>[Your phone]</dd><dt>Hours</dt><dd>[Your hours]</dd><a class="btn red" href="mailto:canvasbacks@gmail.com">Email for a quote</a></dl>
+</div></div>
+<div class="wrap"><footer><span>© Canvasbacks Sail Loft &amp; Canvas Shop · North Kingstown, RI</span><span>Concept design by Maurice Francis · mauricefrancis.com</span></footer></div>
+</body>
+</html>

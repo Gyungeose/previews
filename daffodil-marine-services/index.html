@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daffodil Marine Services — Concept Homepage</title>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<style>
+:root{--yel:#F7C928;--yel2:#FFF4C7;--ink:#12263A;--muted:#55606C;--white:#FFFDF6;--line:#ECE3C4;--sea:#1E6F8E}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--white);color:var(--ink);font-family:"Nunito Sans",system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.concept{background:var(--ink);color:#B7C2CE;font-size:12.5px;text-align:center;padding:8px 16px}
+.concept b{color:#fff}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.top{background:var(--yel)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-family:Gabarito,sans-serif;font-weight:800;font-size:22px;display:flex;align-items:center;gap:10px}
+.logo svg{width:28px;height:28px}
+.links{display:flex;gap:28px;font-size:15px;font-weight:600}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:14px 24px;border-radius:12px;font-weight:700;font-size:15px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.lt{background:#fff;color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:36px 0 72px}
+h1{font-family:Gabarito,sans-serif;font-weight:800;font-size:clamp(42px,6.2vw,76px);line-height:1;letter-spacing:-.02em;margin-bottom:22px;text-wrap:balance}
+.lead{font-size:19px;max-width:500px;margin-bottom:30px;color:#2C3B4A}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.boat{position:relative;height:340px}
+.boat svg{width:100%;height:100%}
+.bub{position:absolute;right:6px;top:18px;background:#fff;border-radius:16px;padding:14px 18px;font-weight:700;font-size:15px;box-shadow:0 10px 24px rgba(18,38,58,.15)}
+.bub span{display:block;font-weight:400;font-size:13.5px;color:var(--muted)}
+section{padding:84px 0}
+h2{font-family:Gabarito,sans-serif;font-weight:800;font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.01em;margin-bottom:14px;text-wrap:balance}
+.sub{color:var(--muted);font-size:17px;max-width:540px;margin-bottom:40px}
+.board{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc{background:#fff;border:1.5px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column}
+.svc .ic{width:48px;height:48px;border-radius:14px;background:var(--yel2);display:grid;place-items:center;margin-bottom:18px}
+.svc .ic svg{width:26px;height:26px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.svc h3{font-family:Gabarito,sans-serif;font-weight:700;font-size:23px;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:15.5px;margin-bottom:16px}
+.price{margin-top:auto;display:flex;justify-content:space-between;border-top:1px dashed var(--line);padding-top:12px;font-size:14.5px;font-weight:700}
+.price span{font-weight:400;color:var(--muted)}
+.how{background:var(--yel2);border-radius:28px;padding:56px;display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.steps{list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;padding:14px 0;border-top:1.5px solid rgba(18,38,58,.1)}
+.steps li::before{content:counter(s);width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--yel);display:grid;place-items:center;font-weight:800;font-family:Gabarito,sans-serif;font-variant-numeric:tabular-nums}
+.steps b{display:block;font-size:17px}
+.steps span{color:var(--muted);font-size:15px}
+.cta{text-align:center}
+.cta p{color:var(--muted);max-width:500px;margin:0 auto 26px;font-size:17px}
+footer{padding:30px 0;font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line)}
+@media (max-width:900px){.hero,.how{grid-template-columns:1fr}.board{grid-template-columns:1fr 1fr}.boat{height:260px}}
+@media (max-width:720px){.wrap{padding:0 16px}.links{display:none}nav .btn{padding:10px 16px;font-size:14px}.hero{padding:16px 0 48px}section{padding:56px 0}.board{grid-template-columns:1fr}.how{padding:32px 22px}.boat{height:220px}}
+</style>
+</head>
+<body>
+<div class="concept">Concept homepage prepared for <b>Daffodil Marine Services</b> by Maurice Francis · not the official website</div>
+<div class="top"><div class="wrap">
+<nav><div class="logo"><svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="5" fill="#12263A"/><g fill="#fff"><ellipse cx="14" cy="5" rx="3.4" ry="4.6"/><ellipse cx="14" cy="23" rx="3.4" ry="4.6"/><ellipse cx="5" cy="14" rx="4.6" ry="3.4"/><ellipse cx="23" cy="14" rx="4.6" ry="3.4"/></g><circle cx="14" cy="14" r="3" fill="#F7C928"/></svg>Daffodil Marine</div><div class="links"><a href="#services">Services</a><a href="#how">How it works</a><a href="#contact">Contact</a></div><a class="btn" href="#contact">Drop off laundry</a></nav>
+<div class="hero">
+<div><h1>Clean laundry and fresh water, right in Admiralty Bay.</h1>
+<p class="lead">Just arrived in Bequia? Bring us your bags, top up your tanks and get rid of your rubbish, all in one stop.</p>
+<div class="ctas"><a class="btn" href="#contact">Plan your drop-off</a><a class="btn lt" href="#services">See services</a></div></div>
+<div class="boat" aria-hidden="true">
+<svg viewBox="40 110 360 200"><path d="M0 250 Q105 232 210 250 T420 250 V340 H0Z" fill="#1E6F8E"/><path d="M0 272 Q105 256 210 272 T420 272" stroke="#FFF4C7" stroke-width="3" fill="none" opacity=".6"/><path d="M70 205 H350 L325 250 H95Z" fill="#12263A"/><rect x="120" y="140" width="170" height="65" rx="10" fill="#fff"/><rect x="138" y="158" width="36" height="26" rx="5" fill="#F7C928"/><rect x="188" y="158" width="36" height="26" rx="5" fill="#F7C928"/><rect x="238" y="158" width="36" height="26" rx="5" fill="#F7C928"/><path d="M110 140 H300" stroke="#12263A" stroke-width="6" stroke-linecap="round"/></svg>
+<div class="bub">Find us in the bay<span>[Where to find you in the bay]</span></div>
+</div>
+</div>
+</div></div>
+<div class="wrap">
+<section id="services">
+<h2>Everything a crew needs after a passage.</h2>
+<p class="sub">Clear prices, quick turnaround, and friendly faces when you come ashore.</p>
+<div class="board">
+<div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="13" r="4.5"/><path d="M7 6.5h2"/></svg></div><h3>Laundry</h3><p>Wash, dry and fold, from clothes to sheets and beach towels.</p><div class="price">Per load<span>[Price]</span></div></div>
+<div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg></div><h3>Water</h3><p>Fill your tanks from the yellow boat.</p><div class="price">Per litre / gallon<span>[Price]</span></div></div>
+<div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></svg></div><h3>Rubbish</h3><p>Hand over your garbage so it doesn't sit on board.</p><div class="price">Per bag<span>[Price]</span></div></div>
+</div>
+</section>
+<section id="how" style="padding-top:0">
+<div class="how">
+<div><h2>Next-day laundry, no fuss.</h2><p class="sub" style="margin-bottom:0">Drop it off when you come ashore, and pick it up fresh tomorrow.</p></div>
+<ol class="steps">
+<li><div><b>Call or hail us</b><span>[Phone / VHF channel] to let us know you're coming.</span></div></li>
+<li><div><b>Drop off your bags</b><span>At the yellow boat or [your drop-off point].</span></div></li>
+<li><div><b>Collect next day</b><span>Clean, dry and folded, ready for the next leg.</span></div></li>
+</ol>
+</div>
+</section>
+<section id="contact" class="cta" style="padding-top:0">
+<h2>Coming into Bequia?</h2>
+<p>Email ahead with how many loads you have, and we'll have a slot ready when you drop anchor.</p>
+<a class="btn" href="mailto:daffodil_harris@yahoo.com">Email Daffodil</a>
+</section>
+<footer><span>© Daffodil Marine Services · Admiralty Bay, Bequia</span><span>Concept design by Maurice Francis · mauricefrancis.com</span></footer>
+</div>
+</body>
+</html>
